@@ -1,0 +1,1814 @@
+2025-06-08 15:38:46 UTC
+Windows-10-10.0.26100
+Ren'Py 8.3.4.24120703
+
+Early init took 0.06s
+Loading error handling took 0.04s
+Loading script took 0.33s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.04s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 19, in script
+    scene expression place.image with dissolve
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1367, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2153, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2192, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 19, in script
+    scene expression place.image with dissolve
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+NameError: name 'name' is not defined
+Resetting cache.
+Early init took 122.81s
+Loading error handling took 0.03s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 37, in script
+    "[world_map.current_place]"
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1440, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1354, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1334, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "game/objects/Place.rpy", line 10, in __repr__
+    return name
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 37, in script
+    "[world_map.current_place]"
+  File "game/objects/Place.rpy", line 10, in __repr__
+    return name
+NameError: name 'name' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 37, in script
+    "[world_map.current_place]"
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1440, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1354, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1334, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "game/objects/Place.rpy", line 10, in __repr__
+    return name
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 37, in script
+    "[world_map.current_place]"
+  File "game/objects/Place.rpy", line 10, in __repr__
+    return name
+NameError: name 'name' is not defined
+Resetting cache.
+Early init took 131.06s
+Loading error handling took 0.02s
+Loading script took 0.12s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.06s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 37, in script
+    "[world_map.current_place]"
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1440, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1354, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\character.py", line 1334, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "game/objects/Place.rpy", line 10, in __repr__
+    return name
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 3 more times]
+  File "game/script.rpy", line 37, in script
+    "[world_map.current_place]"
+  File "game/objects/Place.rpy", line 10, in __repr__
+    return name
+NameError: name 'name' is not defined
+Resetting cache.
+Early init took 147.01s
+Loading error handling took 0.04s
+Loading script took 0.27s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 19, in script
+    scene expression place.image with dissolve
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1246, in execute
+    statement_name("scene")
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 58, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 129, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 111, in _window_hide
+    renpy.with_statement(trans)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2153, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2192, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 19, in script
+    scene expression place.image with dissolve
+  File "renpy/common/000window.rpy", line 129, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 111, in _window_hide
+    renpy.with_statement(trans)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+NameError: name 'name' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 19, in script
+    scene expression place.image with dissolve
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1367, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2153, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2192, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 19, in script
+    scene expression place.image with dissolve
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+NameError: name 'name' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 25, in script
+    call screen return_screen with dissolve
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
+    self.call("execute")
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2153, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2192, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 25, in script
+    call screen return_screen with dissolve
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+NameError: name 'name' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 13, in script
+    call screen map with dissolve
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
+    self.call("execute")
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2153, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\text\text.py", line 2192, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  File "game/script.rpy", line 13, in script call
+    call screen map with dissolve
+  [Previous line repeated 9 more times]
+  File "game/script.rpy", line 13, in script
+    call screen map with dissolve
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 12, in execute
+    screen hud():
+  File "game/custom_screens.rpy", line 15, in execute
+    if world_map.is_somewhere():
+  File "game/custom_screens.rpy", line 16, in execute
+    use location_name(world_map.current_place.name)
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 18, in execute
+    screen location_name(name):
+  File "game/custom_screens.rpy", line 20, in execute
+    frame:
+NameError: name 'name' is not defined
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 244.34s
+Loading error handling took 0.02s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.16s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.05s
+Prepare screens took 0.20s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 348.44s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.11s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 382.27s
+Loading error handling took 0.03s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 391.82s
+Loading error handling took 0.03s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.05s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 416.53s
+Loading error handling took 0.03s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 450.41s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 519.19s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 587.96s
+Loading error handling took 0.02s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 655.26s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.01s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 665.08s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.40s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 680.76s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata took 0.11s
+Loading persistent took 0.00s
+Running init code took 0.09s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 693.30s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.31s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.24s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.07s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 798.56s
+Loading error handling took 0.03s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.15s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 801.77s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.06s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 805.13s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 902.53s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.25s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 923.96s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 25: expected 'label_name' not found.
+    jump "game_over"
+        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 930.13s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.03s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/init.rpy", line 5, in execute_default
+    default game_over = false
+  File "D:\Home\DL\Documents\perso\renpy\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/init.rpy", line 5, in <module>
+    default game_over = false
+NameError: name 'false' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "game/init.rpy", line 5, in execute_default
+    default game_over = false
+  File "game/init.rpy", line 5, in <module>
+    default game_over = false
+NameError: name 'false' is not defined
+Resetting cache.
+Early init took 947.04s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1007.33s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
+Prepare screens took 0.35s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1019.66s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1045.93s
+Loading error handling took 0.02s
+Loading script took 0.13s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1067.65s
+Loading error handling took 0.03s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.24s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.13s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.07s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1078.78s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\DL\\AppData\\Roaming/RenPy/backups\\fruitsalad':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) UHD Graphics'
+Version: b'4.6.0 - Build 30.0.101.2079'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
